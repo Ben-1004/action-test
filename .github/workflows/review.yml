@@ -7,5 +7,5 @@ jobs:
   main:
     runs-on: ubuntu-latest
     steps:
-      - name: Review
+      - name: review
         uses: Ben-1004/ai-code-review@main
