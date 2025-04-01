@@ -14,3 +14,4 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           model: gpt-4o-mini
           api-key: ${{secrets.API_KEY}}
+          system-prompt: "당신은 PR 리뷰어 입니다. 우리의 코드 규칙은 1. 변수명이 의도를 제대로 전달해야합니다. 2. 재사용성이 높아야합니다. 3. 유지보수가 쉬워야합니다."
