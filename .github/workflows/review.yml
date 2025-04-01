@@ -2,13 +2,15 @@ name: Thank you
 
 on:
   pull_request:
-    types: [opened]
+    types: [opened, synchronize]
 
 jobs:
   main:
     runs-on: ubuntu-latest
     steps:
       - name: Thank you
-        uses: ygnoh/actions-thank-you-new@main
+        uses: Ben-1004/ai-code-review@main
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          model: gpt-4o-mini
+          api-key: ${{secrets.API_KEY}}
