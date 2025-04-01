@@ -1,11 +1,14 @@
-name: review
+name: Thank you
 
 on:
   pull_request:
     types: [opened]
+
 jobs:
   main:
     runs-on: ubuntu-latest
     steps:
-      - name: Review
-        uses: Ben-1004/ai-code-review@main
+      - name: Thank you
+        uses: ygnoh/actions-thank-you-new@main
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
