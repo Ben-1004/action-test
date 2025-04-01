@@ -1,0 +1,11 @@
+name: review
+
+on:
+  pull_request:
+    types: [opened]
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Review
+        uses: Ben-1004/ai-code-review@main
